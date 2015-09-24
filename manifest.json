@@ -9,14 +9,14 @@
     "tabs"
   ],
   "background": {
-    "scripts": ["jquery-2.1.4.min.js", "background.js"],
+    "scripts": ["js/jquery-2.1.4.min.js", "js/background.js"],
     "persistent": true
   },
   "content_scripts": [
     {
       "run_at": "document_end",
       "matches": ["https://twitter.com/*"],
-      "js": ["jquery-2.1.4.min.js", "run.js"],
+      "js": ["js/jquery-2.1.4.min.js", "js/run.js"],
       "css": ["style.css"]
     }
   ],
