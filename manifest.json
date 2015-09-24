@@ -1,0 +1,28 @@
+{
+  "name": "Medium Checker",
+  "description": "Make the current page red",
+  "version": "1.0",
+  "permissions": [
+    "https://twitter.com/*",
+    "https://medium.com/@*",
+    "*://*/*",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["jquery-2.1.4.min.js", "background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://twitter.com/*"],
+      "js": ["jquery-2.1.4.min.js", "run.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/Medium-logo-dark100.png",
+    "img/medium-small.png"
+  ],
+  "manifest_version": 2
+}
