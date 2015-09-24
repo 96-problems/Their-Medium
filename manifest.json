@@ -1,6 +1,6 @@
 {
-  "name": "Medium Checker",
-  "description": "Make the current page red",
+  "name": "Their Medium",
+  "description": "",
   "version": "1.0",
   "permissions": [
     "https://twitter.com/*",
