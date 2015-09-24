@@ -77,9 +77,9 @@ function getMediumHTMLWithUsername(username) {
 chrome.extension.onRequest.addListener(
   function(request, sender, sendResponse) {
     if (request.greeting == "requestMediumInfo") {
-		chrome.runtime.sendMessage({detail: "requestTwitterHandle"}, function(response) {
+		  chrome.runtime.sendMessage({detail: "requestTwitterHandle"}, function(response) {
   			getMediumHTMLWithUsername(response.username);
-		});
+		  });
     }
   }
- );
+);

@@ -1,9 +1,9 @@
 chrome.tabs.onUpdated.addListener(function(request, sender, callback) {
 	if (sender.status == "complete") {
 		chrome.tabs.getSelected(null, function(tab) {
-          chrome.tabs.sendRequest(tab.id, {greeting: "requestMediumInfo"}, function(response) {
-          });
+      chrome.tabs.sendRequest(tab.id, {greeting: "requestMediumInfo"}, function(response) {
       });
+    });
 	}
 });
 
@@ -12,5 +12,5 @@ chrome.runtime.onMessage.addListener(
     if (request.detail == "requestTwitterHandle") {
 		sendResponse({username: sender.tab.url.split("https://twitter.com/")[1]});
     }
-  });
-
+  }
+);
