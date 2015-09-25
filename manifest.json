@@ -23,6 +23,11 @@
       "matches": ["https://twitter.com/*"],
       "js": ["js/jquery-2.1.4.min.js", "js/run.js"],
       "css": ["style.css"]
+    },
+    {
+      "matches": ["http://www.96problems.com/their-medium"],
+      "js": ["js/installCheck.js"],
+      "run_at": "document_end"
     }
   ],
   "web_accessible_resources": [
