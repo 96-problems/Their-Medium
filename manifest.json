@@ -25,7 +25,7 @@
       "css": ["style.css"]
     },
     {
-      "matches": ["http://www.96problems.com/their-medium"],
+      "matches": ["http://www.96problems.com/their-medium/"],
       "js": ["js/installCheck.js"],
       "run_at": "document_end"
     }
